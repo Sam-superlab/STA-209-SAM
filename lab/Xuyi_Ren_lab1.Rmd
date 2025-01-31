@@ -1,0 +1,107 @@
+---
+title: "Lab 1"
+author: "Xuyi Ren"
+date: "`r Sys.Date()`"
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Question 1:**
+
+Create a new R Markdown file and copy the entirety of this question over
+to the new file (we will do this for all questions in this lab). Then,
+proceed with the instructions below.
+
+Between the stars below, do the following:
+
+1.  Use two \# to create a header that says About Me
+
+    ## About Me
+
+2.  Type your first name in bold and your last name in italics **Xuyi**
+    *Ren*
+
+3.  Create a bullet point list of the people sitting on either side of
+    you
+
+-   Xuyi Ren
+-   Yingying Li
+-   Yingying Li
+
+4.  Create a numbered list of your 3 least favorite animals
+5.  snake
+6.  fish
+7.  lizard
+8.  Once you have done this, Knit to PDF by clicking the bar of yarn
+    above and verify that everything looks like it should.
+
+Question 2:
+
+Again, copy the entirety of this question into the R Markdown file you
+created for Question 1.
+
+Let’s practice creating vectors and subsetting with a short exercise.
+
+1.  First, create an R code chunk between the rows of stars below
+    (Ctrl+Alt+I is quick way to do this)
+
+```{r}
+
+```
+
+2.  Next, create a vector called x that has all of the numbers from 11
+    to 20
+
+```{r}
+x <- c(11:20)
+```
+
+3.  Use square brackets and subsetting to select the first five numbers
+    of this vector.
+
+```{r}
+x[1:5]
+```
+
+Question 3:
+
+For this question, we will be using the HappyPlanet data that we have
+just looked at:
+
+1.  Part A Copy the code above to read the Happy Planet data into your
+    own R Markdown file, saving the dataset to a variable called planet
+
+```{r}
+planet <- read.csv("https://collinn.github.io/data/HappyPlanet.csv")
+```
+
+2.  Part B Looking at the Happy Planet data, explain in one or two
+    sentences what constitutes an observation in this dataset (what is
+    the data being recorded from)
+
+It is a dataset of countries and their life expectancy, happiness score,
+and ecological footprint.
+
+3.  Part C Using \$ to extract columns from the dataset, find the mean
+    life expectancy of all countries in the dataset? (Hint: what
+    functions have we seen already in this lab?)
+
+```{r}
+mean(planet$LifeExpectancy)
+```
+
+4.  Part D Are there any variables in this dataset that are stored as a
+    numeric that would be better suited as a categorical variable?
+    Explain your answer
+
+Yes, they are: 1. Country 2. Region 3. LifeExpectance 4. Happiness.Score
+5. Ecological.Footprint
+
+They would be better suited as a categorical because they are not
+numbers.
