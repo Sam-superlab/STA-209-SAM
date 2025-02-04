@@ -30,18 +30,20 @@ Between the stars below, do the following:
 3.  Create a bullet point list of the people sitting on either side of
     you
 
--   Xuyi Ren
--   Yingying Li
--   Yingying Li
+-   Yujin Soga
+-   Riku
+-   Sam
 
 4.  Create a numbered list of your 3 least favorite animals
-5.  snake
-6.  fish
-7.  lizard
-8.  Once you have done this, Knit to PDF by clicking the bar of yarn
+
+    1. snake
+    2. fish
+    3. lizard
+
+5.  Once you have done this, Knit to PDF by clicking the bar of yarn
     above and verify that everything looks like it should.
 
-Question 2:
+**Question 2:**
 
 Again, copy the entirety of this question into the R Markdown file you
 created for Question 1.
@@ -52,7 +54,7 @@ Let’s practice creating vectors and subsetting with a short exercise.
     (Ctrl+Alt+I is quick way to do this)
 
 ```{r}
-
+# R code chunk
 ```
 
 2.  Next, create a vector called x that has all of the numbers from 11
@@ -69,7 +71,7 @@ x <- c(11:20)
 x[1:5]
 ```
 
-Question 3:
+**Question 3:**
 
 For this question, we will be using the HappyPlanet data that we have
 just looked at:
@@ -85,8 +87,7 @@ planet <- read.csv("https://collinn.github.io/data/HappyPlanet.csv")
     sentences what constitutes an observation in this dataset (what is
     the data being recorded from)
 
-It is a dataset of countries and their life expectancy, happiness score,
-and ecological footprint.
+In this dataset an observation represents a specific country or region, with data recorded on various attributes like life expectancy, happiness score, ecological footprint, HPI, GDP per capita, HDI, and population that Each observation provides a insigit of these metrics for a given country or region
 
 3.  Part C Using \$ to extract columns from the dataset, find the mean
     life expectancy of all countries in the dataset? (Hint: what
@@ -100,8 +101,4 @@ mean(planet$LifeExpectancy)
     numeric that would be better suited as a categorical variable?
     Explain your answer
 
-Yes, they are: 1. Country 2. Region 3. LifeExpectance 4. Happiness.Score
-5. Ecological.Footprint
-
-They would be better suited as a categorical because they are not
-numbers.
+Yes, they are: 1. Region is categorical because it represents geographic or political groupings rather than continuous numeric values. 2. HPI Rank because it represents a ranking system rather than continus numeric measurements, some method like mean does not apply for this kind of variable so it is categorical.
