@@ -203,7 +203,7 @@ labs(x = "Average Faculty Salary",
 y = "Median 10-yr Salary")
 ```
 
-The relationship between Average Faculty Salary and Median 10-year Salary is a linear, moderate to strong relationship. As it increases, the median 10-year salary also increases hence it is a positive relationship. There are a lot of outliers at upper of the plot.
+The relationship between Average Faculty Salary and Median 10-year Salary is a linear, moderate to strong relationship. As it increases, the median 10-year salary also increases hence it is a positive relationship. There is few outliers at upper of the plot.
 
 **Question 5:** Below is another scatterplot similar to the one in Question 3, but I have added information on whether the colleges are public or private. Is the relationship between Average Faculty Salary and Median 10-year Salary different for public and private colleges? *Briefly* explain (1 or 2 sentences).
 
