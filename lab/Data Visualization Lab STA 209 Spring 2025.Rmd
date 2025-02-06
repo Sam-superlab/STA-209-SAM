@@ -90,7 +90,6 @@ One household surveyed in the ACS is an observation in this experiment.
 
 
 * What is the variable of interest in this study? Is it categorical or quantitative?
-verage household size
 
 average household size, it is a quantitative variable.
 
@@ -98,7 +97,7 @@ average household size, it is a quantitative variable.
 
 * Describe an observation in this study:
 
-The number of cycles a cell can withstand before hitting 50%% of inital capacity.
+The number of cycles a cell can withstand before hitting 50% of inital capacity.
 
 * Describe the sample in this study:
 
