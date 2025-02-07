@@ -11,11 +11,15 @@ This assignment has a total of 23 pts possible. Your score out of 20 will noted 
 **Question 1 -- Conceptual Questions:** (2pts each)
 
   - **Part A** What does it mean to say two variables are *associated* with each other?
+
 If two variables are associated with each other it means that there exists a relationship between the two variables. 
+
   - **Part B** What does it mean to say two variables are *independent* of each other?
+
 If two variables are independent of each other it means that there is no relationship between the two variables. 
 
   - **Part C** What does the distribution of a variable tell us?
+
 The distribution of a variable refer to the frequency of certain values of that variable in datasets. 
 
 **Question 2** For this question, we will be using the `iris` dataset, giving the measurements, in centimeters, of the variables for sepal and petal length and width. You can read more on the dataset [here](https://en.wikipedia.org/wiki/Iris_flower_data_set). An image of what these variables correspond to on a flower are provided below.
@@ -61,8 +65,8 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) + geom_point()
 ```
 Yes, there is some association between the two variables after adding the color by species.
 1. For setosa, it is a moderate positive linear with few outliers between Sepal.Width and Sepal.Length.
-2. For versicolor, it is a strong positive linear with many outliers between Sepal.Width and Sepal.Length.
-3. For virginica, it is a moderate positive linear with many outliers between Sepal.Width and Sepal.Length.
+2. For versicolor, it is a strong positive linear with few outliers between Sepal.Width and Sepal.Length.
+3. For virginica, it is a moderate positive linear with few outliers between Sepal.Width and Sepal.Length.
 
 
 **Question 3:**
@@ -75,9 +79,36 @@ From the [IMS Textbook](https://openintro-ims.netlify.app/), do the following ex
 Write your answers to these exercises below:
 
   - **IMS Ch 4.8, #5** (3pts)
-  
+
+a. From the stacked bar plot (left), it's easier to see the total number of patients in each group. We can clearly see that the treatment group had more total patients than the control group.
+
+b. From the standardized bar plot (right), it's easier to see the relative survival rates between groups. The proportion of survivors appears similar between treatment and control when standardized.
+
+c. For the Heart Transplant Study, the bar plot at right would be more good to display. Bc we're interested in whether the treatment increases lifespan, comparing the proportion is better to see the difference.
+
   - **IMS Ch 4.8, #6** (4pts)
+
+  a. I would use the bottom graph to understand shipping choices of different age groups because it organizes the data by age group first, making it easier to see what shipping methods each age group prefers.
+
+  b. I would use the top graph to understand age distribution across shipping methods because it organizes data by shipping method first, we can easily compare the age makeup of each carrier's customers. 
+
+  c. USPS will be their biggest competitor for people over 55. Looking at the bottom graph, we can see that the 55plus age group uses USPS more than any other shipping method.
+
+  d. FedEx should market to the 18-34 age group. By graphs, we can see that FedEx has the lowest proportion of young customers compared to other age groups.
+
   
   - **IMS Ch 5.10, #1** (3pts)
-  
+
+  a. It should be linear, moderate, positive relationship with few outliers between life span and length of gestation.
+
+  b. If we reversed the axes we would see the same positive, moderate, linear relationship. It shoud not change the direction and form of the relationship.
+
+  c. No, life span and length of gestation are not independent because there is a clear positive association between them in the scatterplot. 
+
   - **IMS Ch 5.10, #2** (2pts)
+
+  a. (1), a positive linear relationship. (3), a positive non-linear relationship.
+
+  b. (4), a negative linear relationship.
+
+  c. (2), no relationship.
